@@ -1,0 +1,430 @@
+page, .container{
+  width:100%;
+  
+}
+
+.navigator{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 999;
+  height: 44px;
+  width: 100%;
+  background-color: rgba(3,169,244,0);
+  padding-top: 20px;
+ 
+  
+  
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 44px;
+}
+.center > image{
+  width: 25px;
+  height: 25px;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 44px;
+  margin-right: 45px;
+ 
+}
+.title > text{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.product-name{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 60px;
+  margin-left: 10px;
+  padding-top: 5px;
+  
+}
+
+.product-name > text{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.product-describe{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 12px;
+  padding: 4px;
+}
+.product-describe > text{
+  font-size: 14px;
+  font-weight: 300;
+}
+.slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+
+ 
+}
+.slide-img{
+  /* width: 92%;  */
+  box-shadow: 0px 10px 20px -10px #ddd;
+  /* margin-left: 10px; */
+  padding: 10px;
+  margin: 0 auto;
+
+}
+
+.sell-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.sell-price{
+  color:#b4a078;
+  font-size: 20px;
+  font-weight: 400;
+  
+}
+.sell-num{
+  font-size: 12px;
+  font-weight: 300;
+}
+.base-action{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10rpx;
+  background-color: #fff;
+  border-bottom: 1px dashed #eee;
+  
+}
+
+.base-action > image{
+  width: 20px;
+  height: 20px;
+  padding: 20rpx 15rpx;
+
+
+  /* margin-right: 15px;  */
+  /* margin-bottom: 10px; */
+  
+}
+
+.action{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10rpx;
+  left: 150rpx;
+  z-index: 999;
+}
+.add-card, .buy{
+  
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 300;
+  margin:10px;
+  background-color: #b4a078;
+  opacity: .9;
+  color: #eee;
+  
+
+}
+
+
+
+
+.tab-h{
+   
+    height: 80rpx;
+    line-height: 80rpx;
+    background: #fff; 
+    font-size: 16px; 
+    margin-left: 220rpx;
+    color: #555;
+    font-weight: 300;
+   
+   
+  }
+.tab-item{
+  margin:0 36rpx;
+  display: inline-block;
+  }
+.tab-item.active{
+  color: #b4a078;
+  position: relative;
+  }
+.tab-item.active:after{ 
+  content: "";
+  display: block;
+  height: 8rpx;
+  width: 52rpx;
+  background: #b4a078;
+  position: absolute;
+   bottom: 0;
+   left: 5rpx;
+   border-radius: 16rpx;
+   }
+
+.product-slide{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+
+}
+.product-slide > image{
+  width: 94%;
+  margin: 20rpx;
+}
+
+.item-ans{ 
+  width: 100%;
+  display: flex; 
+  flex-grow: row no-wrap;
+  justify-content: space-between; 
+  padding: 30rpx;
+  box-sizing: border-box;
+  height: 180rpx;
+  align-items: center;
+  border-bottom: 1px solid #F2F2F2;
+}
+.avatar{
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  padding-right: 30rpx;
+}
+.avatar .img{
+  width: 100%;
+  height: 100%;
+}
+.avatar .doyen{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  bottom: -2px;
+  right: 20rpx;
+}
+.expertInfo{
+  font-size: 12px;
+  flex-grow: 2;
+  color: #B0B0B0;
+  line-height: 1.5em;
+}
+.expertInfo .name{
+  font-size: 16px;
+  color:#000;
+  margin-bottom: 6px;
+}
+.askBtn{ 
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 14px; 
+  border-radius: 60rpx;
+  border: 1px solid #b4a078;
+  color:#b4a078;
+}
+.tab-content{
+  margin-top: 80rpx;
+}
+.scoll-h{
+  height: 100%;
+}
+
+
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+
+.commodity_attr_box {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  padding-top: 20rpx;
+}
+
+.commodity-info{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  width: 100%;
+  border-bottom: 1px dashed #eee;
+ 
+}
+
+.commodity-info-img{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20rpx;
+  /* box-shadow: 3px 3px 10px rgba(0,0,0,0.3); */
+}
+.commodity-info-img > image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.commodity-info-text{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+
+  flex: 1;
+  padding: 20rpx;
+}
+
+.commodity-info-text > text{
+   font-size: 14px;
+   font-weight: 300;
+   /* align-self:flex-end; */
+}
+.price{
+  color: #b4a078;
+}
+.close{
+  display: flex;
+
+}
+
+.close > image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.specs{
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx;
+}
+.specs-title{
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.spec{
+  display: flex;
+  align-items: center;
+ 
+  margin-top: 20rpx;
+}
+
+.spec-item {
+  margin-left: 20rpx;
+  padding: 10rpx;
+  border: 1px solid #aaa;
+  font-size: 14px;
+  font-weight: 300;
+  border-radius: 10rpx;
+  
+
+}
+
+.choosed{
+   border: 1px solid #b4a078;
+   color: #b4a078;
+}
+
+.num{
+  display: flex;
+  flex-direction: column;
+}
+.num-title{
+  font: 14px;
+  font-weight: 300;
+  margin-left: 20rpx;
+}
+
+/*主容器*/
+.stepper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	border: 1px solid #b4a078;
+	border-radius: 8px;
+  margin: 20rpx;
+  margin-left: 40rpx;
+  width: 50%;
+ 
+}
+ 
+/*加号和减号*/
+.stepper text {
+  align-self: center;
+  text-align: center;
+  padding: 10rpx;
+  flex: 1;
+ 
+}
+ 
+/*数值*/
+.stepper input {
+	text-align: center;
+  align-self: center;
+	font-size: 14px;
+	/*给中间的input设置左右边框即可*/
+	border-left: 1px solid #b4a078;
+	border-right: 1px solid #b4a078;
+  padding: 10rpx;
+  flex: 2;
+ 
+}
+ 
+/*普通样式*/
+.stepper .normal{
+	color:#888;
+}
+ 
+/*禁用样式*/
+.stepper .disabled{
+	color: #ccc;
+}
+
+.make-sure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20rpx;
+  margin-bottom: 40rpx;
+}
+.make-sure text{
+  flex: 2;
+  font-size: 18px;
+  /* font-weight: 300; */
+  border: 1px solid #b4a078;
+  text-align: center;
+  border-radius: 10rpx;
+  padding: 10rpx;
+  color: #eee;
+  background-color: #b4a078;
+
+
+}

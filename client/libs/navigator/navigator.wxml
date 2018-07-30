@@ -1,0 +1,9 @@
+<view class='navigator'>  
+   <view class='center'>
+      <image src='../../assets/41.png'></image>
+   </view>
+   <view class='title'>
+      <text>CupTea</text>
+   </view>
+
+</view>

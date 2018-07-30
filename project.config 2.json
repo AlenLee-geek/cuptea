@@ -1,0 +1,10 @@
+{
+	"miniprogramRoot": "./client",
+	"qcloudRoot": "./server",
+	"setting": {
+		"newFeature": true
+	},
+	"appid": "wxbd880840879755f7",
+	"projectname": "cuptea",
+	"condition": {}
+}

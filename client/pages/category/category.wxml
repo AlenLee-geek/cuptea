@@ -1,0 +1,65 @@
+<!--导航栏  -->
+<view class='navigator' >  
+   <view class='center' bindtap='goBack'>
+      <image src='../../assets/back.png'></image>
+   </view>
+   <view class='title'>
+      <text>精选-茶饼</text>
+   </view>
+
+</view>
+
+<!--分类图标  -->
+<view class='categoty-icon'>
+    <image src='../../assets/c-tea-4.jpg'></image>
+</view>
+
+<!--分类标题  -->
+<view class='category-title'>
+     <text>- 茶饼分类 -</text>
+</view>
+
+<!--商品列表  -->
+<view class='list'>
+   <view class='products'>
+
+      <view class='product' bindtap='goDetail'>
+         <image src='../../assets/c-tea-5.jpg'></image>
+         <view class='product-describe'>
+           <text>茶香汤清</text>
+         </view>
+         <text class='product-title'>政和老白茶</text>
+         <text class='product-price'>300￥</text>
+      </view>
+
+       <view class='product' bindtap='goDetail'>
+         <image src='../../assets/c-tea-6.jpg'></image>
+         <view class='product-describe'>
+           <text>茶香汤清</text>
+         </view>
+         <text class='product-title'>政和老白茶</text>
+         <text class='product-price'>300￥</text>
+      </view>
+   </view>
+
+   <view class='products' >
+
+      <view class='product' bindtap='goDetail'>
+         <image src='../../assets/c-tea-7.jpg'></image>
+         <view class='product-describe'>
+           <text>茶香汤清</text>
+         </view>
+         <text class='product-title'>政和老白茶</text>
+         <text class='product-price'>300￥</text>
+      </view>
+
+       <view class='product' bindtap='goDetail'>
+         <image src='../../assets/c-tea-8.jpg'></image>
+         <view class='product-describe'>
+           <text>茶香汤清</text>
+         </view>
+         <text class='product-title'>政和老白茶</text>
+         <text class='product-price'>300￥</text>
+      </view>
+   </view>
+</view>

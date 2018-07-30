@@ -1,0 +1,109 @@
+<!--导航栏  -->
+<view class='navigator' >  
+   <view class='center' bindtap='goBack'>
+      <image src='../../assets/back.png'></image>
+   </view>
+   <view class='title'>
+      <text>我的</text>
+   </view>
+</view>
+
+<!--用户信息  -->
+<view class='user-info'>
+    <view class='user-img'>
+       <!-- <image src='../../assets/41.png'></image> -->
+       <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class='user-name'>
+       <!-- <text>alenLee</text> -->
+       <open-data type="userNickName" ></open-data>
+    </view>
+</view>
+
+<!--订单转态  -->
+<view class='orders-info'>
+    <view class='orders' bindtap='goOrder' data-stutas='0'>
+      <view class='my-orders'>
+       <text >我的订单</text>
+      </view>
+      <view class='all-orders'>
+       <text >查看全部订单</text>
+      </view> 
+    </view>
+    <view class='order-status' bindtap='goOrder' data-status='-1'>
+      <!--待付款  -->
+      <view class='status'>
+          <image src='../../assets/unpay.png'></image>
+          <text>待付款</text>
+      </view>
+      <!--待发货  -->
+      <view class='status' bindtap='goOrder' data-status='1'>
+          <image src='../../assets/unsent.png'></image>
+          <text>待发货</text>
+      </view>
+
+      <!--待收货  -->
+      <view class='status' bindtap='goOrder' data-status='2'>
+          <image src='../../assets/untake.png'></image>
+          <text>待收货</text>
+      </view>
+      
+      <!--待评价 -->
+      <view class='status' bindtap='goOrder' data-status='3'>
+          <image src='../../assets/evaluation.png'></image>
+          <text>待评价</text>
+      </view>
+    </view>
+
+</view>
+
+<!--基本管理  -->
+
+<view class="base-manage">
+   <view class='manage-item'>
+      <view class='item-img'>
+          <image src='../../assets/address.png'></image>
+      </view>
+      <view class='item-title'>
+          <text>地址管理</text>
+      </view>
+
+       <view class='flag'>
+           <text>></text>
+       </view>
+      
+   </view>
+
+    <view class='manage-item'>
+      <view class='item-img'>
+          <image src='../../assets/feedback.png'></image>
+      </view>
+      <view class='item-title'>
+          <text>意见反馈</text>
+          
+      </view>
+
+      <view class='flag'>
+             <text>></text>
+       </view>
+      
+   </view>
+
+    <view class='manage-item'>
+      <view class='item-img'>
+          <image src='../../assets/about.png'></image>
+      </view>
+      <view class='item-title'>
+          <text>关于我们</text>
+          
+      </view>
+
+      <view class='flag'>
+             <text>></text>
+       </view>
+      
+   </view>
+
+</view>
+
+

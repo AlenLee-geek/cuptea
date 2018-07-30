@@ -1,0 +1,178 @@
+/* pages/order/order.wxss */
+
+/* pages/user/user.wxss */
+
+page, .container {
+  width: 100%;
+}
+
+.navigator {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 44px;
+  width: 100%;
+  background-color: rgba(3, 169, 244, 0);
+  padding-top: 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 44px;
+}
+
+.center > image {
+  width: 25px;
+  height: 25px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 44px;
+  margin-right: 50px;
+}
+
+.title > text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tab-h {
+  height: 100rpx;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  line-height: 100rpx;
+  background: #f7f7f7;
+  font-size: 16px;
+  white-space: nowrap;
+  position: fixed;
+  top: 130rpx;
+  left: 0;
+  z-index: 99;
+}
+
+.tab-item {
+  margin: 0 30rpx;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+ 
+}
+
+.tab-item.active {
+  color: #b4a078;
+  position: relative;
+  font-size: 14px;
+  font-weight: 300;
+  /* border-bottom: 1px solid #b4a078; */
+}
+
+.tab-item.active:after {
+  content: "";
+  display: block;
+  height: 8rpx;
+  width: 80rpx;
+  background: #b4a078;
+  position: absolute;
+  bottom: 0;
+  /* left: 8rpx;
+
+   */
+  border-radius: 16rpx;
+} 
+
+.item-ans {
+  width: 100%;
+  display: flex;
+  flex-grow: row no-wrap;
+  justify-content: space-between;
+  padding: 30rpx;
+  box-sizing: border-box;
+  height: 180rpx;
+  align-items: center;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  padding-right: 30rpx;
+}
+
+.avatar .img {
+  width: 100%;
+  height: 100%;
+}
+
+.avatar .doyen {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  bottom: -2px;
+  right: 20rpx;
+}
+
+.expertInfo {
+  font-size: 12px;
+  flex-grow: 2;
+  color: #b0b0b0;
+  line-height: 1.5em;
+}
+
+.expertInfo .name {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 6px;
+}
+
+.askBtn {
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 60rpx;
+  border: 1px solid #4675f9;
+  color: #4675f9;
+}
+
+.tab-content {
+  margin-top: 200rpx;
+}
+
+.scoll-h {
+  height: 100%;
+}
+
+.empty-cart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+
+}
+.empty-cart > Image{
+  width: 500rpx;
+  height: 500rpx;
+  margin-left: 70rpx;
+}
+.empty-cart > text{
+
+  font-size: 16px;
+  color: #888;
+  font-weight: 300;
+  padding: 20rpx;
+}

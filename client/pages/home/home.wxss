@@ -1,0 +1,276 @@
+page, .container{
+  width:100%;
+  
+}
+
+.navigator{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 999;
+  height: 44px;
+  width: 100%;
+  background-color: rgba(3,169,244,0);
+  padding-top: 20px;
+ 
+  
+  
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150rpx;
+  height:50rpx;
+  position: relative;
+ 
+}
+.user{
+  display: block;
+  overflow: hidden;
+  width: 80rpx;
+  height: 80rpx;
+ 
+  margin-top: 50rpx;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  
+  box-shadow: 3px 3px 10px rgba(0,0,0,.2);
+}
+
+
+.center > image{
+  width: 25px;
+  height: 25px;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  /* height: 44px; */
+  margin-right: 150rpx;
+ 
+}
+.title > text{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.container{
+  background: linear-gradient(135deg,#fff 0%,#ddd,100%);
+  width: 100%;
+}
+
+.one-day-image{
+  width: 100%;
+  height: 250px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg,#FFF 0%,#DDD 100%);
+}
+.one-day-image > image{
+   height: 100%; 
+   width: 100%;
+}
+
+.one-day-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  height: 250px;
+  width: 100%
+}
+.one-day-text > text{
+  font-size: 18px;
+  color: #fff;
+  font-weight: 200;
+}
+
+.one-day-word{
+  /* z-index: 999; */
+  margin: 20px;
+  margin-top: -55px;
+  min-height: 90px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px -5px #ddd;
+  width: 90%;
+}
+.one-day-word-title{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px 20px;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 1px dashed #eee;
+  background-color: #fff;
+  height: 50px;
+}
+.one-day-word-title > text{
+  font-size:16px;
+  font-weight: 300px;
+}
+.one-day-word-content{
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 0px 0px 10px 10px;
+}
+.one-day-word-content > text{
+  font-size:14px;
+  line-height: 20px;
+  color: #333;
+  font-weight: 200;
+}
+.one-day-word-abstract{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+.one-day-word-abstract > text{
+  font-size: 12px;
+  color: #999;
+  font-weight: 100;
+}
+
+.recommend{
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px -5px #ddd;
+  width: 90%;
+}
+
+.recommend-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 1px dashed #eee;
+  background-color: #fff;
+  height: 50px;
+}
+.recommend-title > text{
+  font-size:16px;
+  font-weight: 300px;
+}
+.recommend-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 10px 10px;
+  width: 100%;
+  height: 200px;
+ 
+  
+}
+.recommend-container > image{
+  width: 90%;
+  height: 90%;
+
+}
+.recommend-brief{
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 0px 0px 10px 10px;
+
+}
+
+.recommend-brief > text{
+  font-size: 16px;
+  color: #777;
+  font-weight: 200;
+}
+.recommend-price{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-left: 10px;
+}
+.old-price{
+  font-size: 16px;
+  color: red;
+  text-decoration: line-through;
+}
+.pick{
+   border: 1px solid #eee; 
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 200;
+  color: #888;
+  background-color: #fff;
+  margin-right: 10px;
+  
+}
+.category{
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px -5px #ddd;
+  width: 90%;
+  margin-top: 20px;
+  
+}
+
+.category-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px dashed #eee;
+  border-radius: 10px 10px 0px 0px;
+  padding: 0px 20px;
+  height: 50px;
+  background-color: #fff;
+}
+
+.category-title > text{
+  font-size: 16px; 
+}
+
+.items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  
+ 
+}
+
+.item-describe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1.3;
+}
+
+.item-title{
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  
+}
+.item-text{
+  font-size: 14px;
+  font-weight: 300;
+  color: #888;
+}
+.item-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+
+}
+.item-image > image{
+  width: 80px;
+  height: 80px;
+}
+

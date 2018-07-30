@@ -1,0 +1,39 @@
+.navigator{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 999;
+  height: 44px;
+  width: 100%;
+  background-color: rgba(3,169,244,0);
+  padding-top: 20px;
+ 
+  
+  
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 44px;
+}
+.center > image{
+  width: 25px;
+  height: 25px;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 44px;
+  margin-right: 45px;
+ 
+}
+.title > text{
+  font-size: 16px;
+  font-weight: 500;
+}

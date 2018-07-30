@@ -1,0 +1,82 @@
+<!--导航栏  -->
+<view class='navigator' >  
+   <view class='center' bindtap='goBack'>
+      <image src='../../assets/back.png'></image>
+   </view>
+   <view class='title'>
+      <text>精选-Tea</text>
+   </view>
+
+</view>
+
+<!--内容 -->
+<!--图片的轮播图  -->
+   <swiper autoplay='true' >
+       <swiper-item class='slide'>
+        <image src='../../assets/c-tea.jpg' class='slide-image'></image>
+       </swiper-item>
+       <swiper-item class='slide'>
+        <image src='../../assets/c-tea-1.jpg' class='slide-image'></image>
+       </swiper-item>
+   </swiper>
+
+   <view class='container'>
+      <view class='container-title'>
+         <text>政大白茶</text>
+      </view>
+
+      <scroll-view class='main-container'>
+         <view class='container-detail'>
+           <image src='../../assets/c-tea-2.jpg'></image>
+    
+         </view>
+
+         <view class='container-text'>
+            <text>   品茶有讲究，一杯茶分三口，第一口试茶温，第二口品茶香，第三口才是饮茶。呷茶入口，茶汤在口中回旋，顿觉口鼻生香。</text>
+         </view> 
+         <view class='container-detail'>
+           <image src='../../assets/c-tea-3.jpg'></image>
+    
+         </view>
+
+         <view class='container-text'>
+            <text>   品茶有讲究，一杯茶分三口，第一口试茶温，第二口品茶香，第三口才是饮茶。呷茶入口，茶汤在口中回旋，顿觉口鼻生香。</text>
+         </view>
+      </scroll-view>
+   </view>
+
+   <!--用户操作  -->
+   <view class="action">
+
+      <view class="cell-icon">
+          <view class='cell-icon-img'>
+             <image src='../../assets/share.png'></image> 
+          </view>
+         
+          <!-- <view class='cell-icon-text'>
+            <text>123</text>
+          </view> -->
+         
+      </view>
+
+       <view class="cell-icon">
+         <view class='cell-icon-img'>
+             <image src='../../assets/card.png'></image> 
+          </view>
+          <!-- <view class='cell-icon-text'>
+            <text>123</text>
+          </view> -->
+         
+      </view>
+
+        <view class="cell-icon">
+         <view class='cell-icon-img'>
+             <image src='../../assets/relay.png'></image> 
+          </view>
+           <!-- <view class='cell-icon-text'>
+            <text>123</text>
+          </view> -->
+         
+      </view>
+      
+   </view>

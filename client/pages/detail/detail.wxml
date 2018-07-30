@@ -1,0 +1,138 @@
+<!--导航栏  -->
+<view class='navigator' >  
+   <view class='center' bindtap='goBack'>
+      <image src='../../assets/back.png'></image>
+   </view>
+   <view class='title'>
+      <text>详情-Tea</text>
+   </view>
+
+</view>
+
+<!--商品名称  -->
+<view class='product-name'>
+   <text>{{productInfo.title}}</text>
+</view>
+<!--商品简介  -->
+<view class='product-describe'>
+    <text>{{productInfo.desc}}</text>
+</view>
+<!--轮播图  -->
+<swiper class='slide' previous-margin="20rpx" next-margin="20rpx" autoplay='true' circular="true">
+   <block wx:for="{{swiperImgUrls}}" wx:key="{{index}}"> 
+       <swiper-item >
+           <image class='slide-img' src="{{item}}"></image>
+       </swiper-item>
+   </block>
+
+
+</swiper>
+
+<!--销售信息  -->
+<view class='sell-info'>
+   <text class='sell-price'>{{productInfo.price}}￥ </text>
+   <text class='sell-num'> 已售1</text>
+</view>
+
+<!--用户的基本操作  -->
+<view class='base-action'>
+   <image src="../../assets/customer-service.png"></image>
+   <image src="../../assets/relay.png"></image>
+</view>
+
+<!--操作  -->
+
+<view class='action'>
+   <button class='add-card' data-action="addCart" bindtap='showModal'>加入购物车</button>
+   <button class='buy' data-action="buyNow" bindtap='showModal'>立即购买</button>
+</view>
+
+<!--商品介绍和用户评价  -->
+
+<view >
+    <scroll-view class="tab-h" >
+        <view class="tab-item {{currentTab==0?'active':''}}"  data-current="0" bindtap="swichNav">商品</view>
+        <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">评价</view>
+      
+    </scroll-view>
+    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
+     style="height:{{winHeight}}rpx">
+       
+        <swiper-item  wx:for="{{[0,1]}}" wx:key="*this" >
+          <view class="product-slide" wx:if="{{index == 0}}">
+             <image  src='../../assets/c-tea-2.jpg'></image>
+          </view>
+           <view class="product-slide" wx:if="{{index == 1}}">
+             <view class="item-ans">
+                        <view class="avatar">
+                            <image class="img" src="http://ookzqad11.bkt.clouddn.com/avatar.png"></image>
+                        </view>
+                        <view class="expertInfo">
+                            <view class="name">欢颜</view>
+                            <view class="tag">知名情感博主</view>
+                            <view class="answerHistory">134个回答，2234人听过 </view>
+                        </view>
+                        <navigator url="/pages/askExpert/expertDetail" class="askBtn">问TA</navigator> 
+                    </view>
+          </view>
+        </swiper-item>
+    </swiper>
+</view>
+
+<!-- 加入购物车和立即购买 -->
+
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+<!-- 弹出框内容 -->
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+    <!-- 商品基本信息 -->
+    <view class='commodity-info'>
+        <view class='commodity-info-img'>
+           <image src='{{productInfo.image}}'></image>
+           
+        </view>
+        <view class='commodity-info-text'>
+          
+           <text class='choose-spec'>已选：{{chooseSpec}}</text>
+           <text class='price'>价格：￥{{productInfo.price}}</text> 
+        </view>
+        <view class='close' bindtap="hideModal">
+           <image src='../../assets/close.png'></image>
+        </view>
+    </view>
+    <!-- 商品规格信息 -->
+    <scroll-view scroll-y="true">
+      <view class='specs'>
+        <text class='specs-title'>规格</text>
+        <view class='spec'>
+              <block wx:for="{{specs}}" wx:key="{{index}}">
+                 <text class='spec-item {{item.selected?"choosed":" "}}' data-index='{{index}}' bindtap='chooseSpec'>{{item.spec}}</text>
+              </block>
+    
+         </view>
+      </view>
+    </scroll-view>
+    <!-- 购买数量 -->
+    <view class='num'>
+
+       <text class='num-title'>数量</text>
+          <!-- 主容器 -->
+        <view class="stepper">
+      
+          <!-- 减号 -->
+          <text class="{{minusStatus}}" bindtap="bindMinus">-</text>
+          <!-- 数值 -->
+          <input type="number" bindchange="bindManual" value="{{num}}" />
+          <!-- 加号 -->
+          <text class="normal" bindtap="bindPlus">+</text>
+        </view>
+    </view>
+    <!-- 确定 -->
+
+    <view class='make-sure' bindtap='doAction'>
+      <text>确定</text>
+    </view>
+   
+    
+    
+</view>
+

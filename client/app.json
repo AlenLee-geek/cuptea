@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/order/order",
+    "pages/cart/cart",
+    "pages/user/user",
+    "pages/detail/detail",
+    "pages/category/category",
+    "pages/index/index",
+    "pages/addCgi/addCgi",
+    "pages/recommend/recommend",
+    "pages/status/status",
+    "pages/userinfo/userinfo"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": " ",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  }
+}
